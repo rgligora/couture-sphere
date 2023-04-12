@@ -46,7 +46,25 @@ header{
     justify-content: space-evenly;
     align-items: center;
 }
+
+.icon-section>a{
+    display: flex;
+    flex-direction: row;
+
+}
  
+#cart-count.hide{
+    display: none;
+}
+
+#cart-count{
+    position: absolute;
+    color: rgba(0,173,181,255);
+    font-size: 2rem;
+    background-color: rgba(238,238,238,255);
+    padding: 3px 19px;
+    border-radius: 50%;
+}
 
 .header-bar>div{
     height: 100%;
@@ -331,6 +349,15 @@ li>a{
         width: 220px;
         
     }
+
+    #cart-count{
+        color: rgba(0,173,181,255);
+        background-color: rgba(57,62,70,255);
+        padding: 1px 8px;
+        font-size: 1rem;
+        border: 0.2rem solid rgba(0,173,181,255);
+    }
+
     
 }
 

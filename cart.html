@@ -21,6 +21,7 @@
             <div class="icon-section">
                 <a class="icon" href="./cart.html">
                     <img class="cart-icon" src="./images/icons8-shopping-cart-96.png" alt="shopping-cart">
+                    <div class="hide" id="cart-count">0</div>
                 </a>
                 <a class="icon" href="">
                     <img class="search-icon-class" src="./images/icons8-search-100.png" alt="search-icon">
@@ -31,34 +32,18 @@
     <main>
         <div class="cart">
             <div class="cart-text">CART</div>
-            <div class="cart-container">
+            <div class="cart-container" id="cart-container">
                 <div class="cart-header">
                     <div>PRODUCT</div>
                     <div>QUANTITY</div>
                 </div>
-                <div class="cart-product">
-                    <div class="cart-product-name">Black hoodie</div>
-                    <div class="cart-product-menu">
-                        <button type="button" class="button decrement circle">-</button>
-                        <div class="divider"></div>
-                        <input class="input-bar" type="number" name="quantity" value="0">
-                        <div class="divider"></div>
-                        <button type="button" class="button increment circle">+</button>
-                    </div>
-                </div>
-                <div class="cart-product">
-                    <div class="cart-product-name">Black hoodie</div>
-                    <div class="cart-product-menu">
-                        <button type="button" class="button decrement circle">-</button>
-                        <div class="divider"></div>
-                        <input class="input-bar" type="number" name="quantity" value="0">
-                        <div class="divider"></div>
-                        <button type="button" class="button increment circle">+</button>
-                    </div>
-                </div>
+            </div>
+            <div class="clear-container">
+                <button class="button clear-all">CLEAR CART</button>
             </div>
         </div>
     </main>
-    
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/script_cart.js" defer></script>
 </body>
 </html>

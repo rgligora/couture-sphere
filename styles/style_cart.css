@@ -16,6 +16,14 @@ main{
     justify-content: space-around;
     border: 0.3rem solid black;
 }
+.clear-container{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+.clear-all{
+    align-self: center;
+}
 
 .cart-text{
     font-size: 4rem;
@@ -121,5 +129,13 @@ main{
     }
     .divider{
         width: 5px;
+    }
+
+    #cart-count{
+        color: rgba(0,173,181,255);
+        background-color: rgba(57,62,70,255);
+        padding: 1px 8px;
+        font-size: 1rem;
+        border: 0.2rem solid rgba(0,173,181,255);
     }
 }
