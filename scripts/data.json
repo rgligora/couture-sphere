@@ -2,6 +2,27 @@
 {
     "products" : [
       {
+        "id": "042",
+        "name": "White sneakers",
+        "category": "Sneakers",
+        "price": 99.99,
+        "image": "./images/shoe-white.jpg"
+      },
+      {
+        "id": "017",
+        "name": "Black hoodie",
+        "category": "Hoodie",
+        "price": 10.99,
+        "image": "./images/hoodie-black.jpg"
+      },
+      {
+        "id": "028",
+        "name": "Khaki joggers",
+        "category": "Pants",
+        "price": 45.99,
+        "image": "./images/pants-brown-street.jpg"
+      },
+      {
         "id": "003",
         "name": "Pink T-shirt",
         "category": "T-shirt",
@@ -23,13 +44,6 @@
         "image": "./images/pants-gery-mens.jpg"
       },
       {
-        "id": "042",
-        "name": "White sneakers",
-        "category": "Sneakers",
-        "price": 99.99,
-        "image": "./images/shoe-white.jpg"
-      },
-      {
         "id": "016",
         "name": "Brown hat",
         "category": "Hats",
@@ -43,20 +57,7 @@
         "price": 50.99,
         "image": "./images/sunglasses-1.jpg"
       },
-      {
-        "id": "017",
-        "name": "Black hoodie",
-        "category": "Hoodie",
-        "price": 10.99,
-        "image": "./images/hoodie-black.jpg"
-      },
-      {
-        "id": "028",
-        "name": "Khaki joggers",
-        "category": "Pants",
-        "price": 45.99,
-        "image": "./images/pants-brown-street.jpg"
-      },
+      
       {
         "id": "007",
         "name": "Yellow backpack",
