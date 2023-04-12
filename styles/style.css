@@ -354,6 +354,14 @@ li>a{
         max-width: 180px;
     }
 
+    .product-count{
+        
+        font-size: 1.2rem;
+        background-color: rgba(0,173,181,255);
+        border: 0.4rem solid rgba(57,62,70,255);
+        padding: 3px 13px;
+        border-radius: 50%;
+    }
     
     .search-icon-class{
         max-width: 80%;
