@@ -184,6 +184,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .product>img{
@@ -191,6 +192,23 @@ main{
     min-width: 200px;
     max-width: 230px;
 }
+
+.product-count.hide{
+    display: none;
+}
+
+.product-count{
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    color: rgba(238,238,238,255);
+    font-size: 2rem;
+    background-color: rgba(0,173,181,255);
+    border: 0.4rem solid rgba(57,62,70,255);
+    padding: 3px 19px;
+    border-radius: 50%;
+}
+
 ul{
     margin-left: 20px;
     list-style: none;

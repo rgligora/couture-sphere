@@ -23,6 +23,21 @@ fetch('./scripts/data.json')
       priceElement.textContent = '$' + product.price.toFixed(2);
       productElement.appendChild(priceElement);
 
+      const productCounter = document.createElement('div');
+      productCounter.classList.add('product-count');
+      //productCounter.classList.add('hide');
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const existingProductIndex = cart.findIndex((p) => p.id === product.id);
+      if(existingProductIndex >= 0){
+        productCounter.innerHTML = cart[existingProductIndex].quantity;
+        productCounter.classList.remove('hide');
+      }else{
+        productCounter.innerHTML = 0
+        productCounter.classList.add('hide');
+      }
+      productCounter.id = 'product-counter'+ product.id;
+      productElement.appendChild(productCounter);
+
       const buttonElement = document.createElement('button');
       buttonElement.classList.add('add-to-cart-button');
       buttonElement.alt = product.name;
@@ -47,6 +62,7 @@ fetch('./scripts/data.json')
       
           localStorage.setItem('cart', JSON.stringify(cart));
           updateCartCount();
+          updateProductCounters();
       });
       productElement.appendChild(buttonElement);
       productsContainer.appendChild(productElement);
@@ -54,6 +70,7 @@ fetch('./scripts/data.json')
     });
 
     loadCart();
+    updateProductCounters();
 
     function loadCart(){
         const cartCount = document.querySelector('#cart-count');
@@ -70,6 +87,25 @@ fetch('./scripts/data.json')
             cartCount.textContent = JSON.parse(localStorage.getItem('status'));
         }
     }
+
+    function updateProductCounters(){
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        for (const iterator of cart) {
+            let idTemp = iterator.id;
+            const tempPro = document.getElementById('product-counter'+idTemp);
+            tempPro.classList.remove('hide')
+            tempPro.textContent = iterator.quantity;
+        }
+    }
+/*
+    function loadProductCounters(){
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        for (const iterator of cart) {
+            let idTemp = iterator.id;
+            const tempProductCounter = document.getElementById('product-counter'+idTemp);
+            tempProductCounter.textContent = iterator.quantity;
+        }
+    }*/
     
 
     function updateCartCount() {
