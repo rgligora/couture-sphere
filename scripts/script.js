@@ -59,11 +59,13 @@ fetch('./scripts/data.json')
         const cartCount = document.querySelector('#cart-count');
         cartCount.classList.add("hide")
         loadedValue = JSON.parse(localStorage.getItem('status'));
-        if(loadedValue == null){
+        if(loadedValue === null){
             loadedValue = 0;
         } else {
-            if(loadedValue != 0){
+            if(loadedValue > 0){
                 cartCount.classList.remove("hide")
+            }else {
+                cartCount.classList.add("hide")
             }
             cartCount.textContent = JSON.parse(localStorage.getItem('status'));
         }

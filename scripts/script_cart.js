@@ -180,7 +180,7 @@ function loadCartCount(){
     const cartCount = document.querySelector('#cart-count');
     cartCount.classList.add("hide")
     loadedValue = JSON.parse(localStorage.getItem('status'));
-    if(loadedValue != 0){
+    if(loadedValue > 0){
         cartCount.classList.remove("hide")
     }
     cartCount.textContent = loadedValue;
