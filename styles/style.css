@@ -362,4 +362,7 @@ li>a{
         height: 250px;
         
     }
+    .product>h3{
+        font-size: 0.9em;
+    }
 }
