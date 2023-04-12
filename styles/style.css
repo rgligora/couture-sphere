@@ -355,4 +355,11 @@ li>a{
         min-width: 100px;
         max-width: 150px;
     }
+
+    .add-to-cart-button{
+        position: absolute;
+        width: 160px;
+        height: 250px;
+        
+    }
 }
