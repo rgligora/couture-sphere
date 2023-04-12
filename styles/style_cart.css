@@ -81,3 +81,45 @@ main{
 .divider{
     width: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .cart div{
+        font-size: 1.3rem;
+    }
+
+    .cart-product>div{
+        flex-basis: 50%;
+        text-align: center;
+        font-size: 0.9rem;
+        font-family: oswald;
+    }
+
+    
+    .cart-product-menu{
+        display: flex;
+        justify-content: center;
+        max-width: 30%;
+        padding-right: 50px;
+    }
+    
+    .input-bar{
+        text-align: center;
+        max-width: 50px;
+    }
+    
+    
+    .button{
+        font-size: 1rem;
+    }
+      
+    .circle {
+        border-radius: 30%;
+        padding: 0.125em 0.25em;
+    }
+    .cart-product-name{
+        font-size: 1rem;
+    }
+    .divider{
+        width: 5px;
+    }
+}
