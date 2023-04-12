@@ -62,7 +62,9 @@ fetch('./scripts/data.json')
         if(loadedValue == null){
             loadedValue = 0;
         } else {
-            cartCount.classList.remove("hide")
+            if(loadedValue != 0){
+                cartCount.classList.remove("hide")
+            }
             cartCount.textContent = JSON.parse(localStorage.getItem('status'));
         }
     }
