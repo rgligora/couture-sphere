@@ -364,5 +364,6 @@ li>a{
     }
     .product>h3{
         font-size: 0.9em;
+        text-align: center;
     }
 }
