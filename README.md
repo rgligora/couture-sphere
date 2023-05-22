@@ -1,4 +1,4 @@
-# webshop_Couture_Sphere
+# Couture Sphere
 Webshop project
 
-![Screenshot](template show.png)
+![alt text](https://github.com/rgligora/webshop_Couture_Sphere/blob/main/images/showResponsiveDesign.png?raw=true)
