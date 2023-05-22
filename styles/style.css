@@ -7,7 +7,7 @@
 @font-face {
     font-family: oswald;
     src: url(Oswald-VariableFont_wght.ttf);
-    /*zasto ne radi link na font*/
+    
 }
 
 body{
@@ -27,6 +27,11 @@ header{
     display: flex;
     align-items: stretch;
     justify-content: stretch;
+}
+
+.drop-down-menu-reveal{
+    display: none;
+    color: rgba(238,238,238,255);
 }
 
 .category-text{
@@ -74,6 +79,9 @@ header{
 .logo>img{
     max-width: 200px;
     max-height: 200px;
+}
+.drop-down-menu{
+    display: none;
 }
 
 
@@ -395,6 +403,7 @@ li>a{
     .left-menu-bar{
         display: none;
     }
+
     .product-container{
         flex-basis: 100%;
     }
@@ -420,4 +429,22 @@ li>a{
         text-align: center;
         font-weight: 400;
     }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 1;
+    }
+    .drop-down-menu{
+        display: inline-block;
+        align-self: center;
+        min-width: auto;
+    }
+
+    li>a{
+        color: rgba(238,238,238,255);
+    }
+
+    
+
+
 }

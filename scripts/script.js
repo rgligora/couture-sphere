@@ -1,3 +1,12 @@
+const dropDownButton = document.getElementById('drop-down-button')
+dropDownButton.addEventListener('click', function() {
+    if(document.getElementById('left-menu').style.display == "flex"){
+      document.getElementById('left-menu').style.display="none";
+    }else{
+      document.getElementById('left-menu').style.display="flex";
+    }
+      
+});
 fetch('./scripts/data.json')
   .then(response => response.json())
   .then(data => {
@@ -69,6 +78,7 @@ fetch('./scripts/data.json')
     });
     });
 
+
     loadCart();
     updateProductCounters();
 
@@ -115,3 +125,4 @@ fetch('./scripts/data.json')
         cartCount.textContent = valueFromLS+1;
         localStorage.setItem('status', JSON.stringify(valueFromLS+1));
     }
+

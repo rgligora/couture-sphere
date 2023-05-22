@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/category_sort.js" defer></script>
     <title>Couture Sphere</title>
 </head>
 
@@ -12,6 +14,44 @@
     <header>
         <div class="logo">
             <img src="./images/logo.png" alt="">
+            <a class="drop-down-menu" href="#" id="drop-down-button">
+                <img src="./images/icons8-menu-90.png" alt="menu=icon">
+            </a>
+        </div>
+        <div class="drop-down-menu-reveal" id="left-menu">
+            <div class="category-section">
+                <ul class="group-category" id="category-menu">
+                    <li><a href="#" data-category="all">ALL</a>
+                    </li>
+                    <li><a href="#" data-category="exception">CLOTHES</a>
+                        <ul class="subcategory">
+                            <li><a href="" data-category="T-shirt">T-shirt</a></li>
+                            <li><a href="" data-category="Hoodie">Hoodie</a></li>
+                            <li><a href="" data-category="Jacket">Jacket</a></li>
+                            <li><a href="" data-category="Pants">Pants</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" data-category="exception">FOOTWEAR</a>
+                        <ul class="subcategory" >
+                            <li><a href="" data-category="Dress-shoes">Dress shoes</a></li>
+                            <li><a href="" data-category="Sneakers">Sneakers</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li><a href="#" data-category="exception">ACCESSORIES</a>
+                        <ul class="subcategory" >
+                            <li><a href="" data-category="Bags">Bags</a></li>
+                            <li><a href="" data-category="Sunglasses">Sunglasses</a></li>
+                            <li><a href="" data-category="Watches">Watches</a></li>
+                            <li><a href="" data-category="Hats">Hats</a></li>
+                            <li><a href="" data-category="Scarfs">Scarfs</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
         </div>
         <div class="header-bar">
             <div class="category-text">
@@ -89,7 +129,6 @@
     
         </div>
     </main>
-    <script src="./scripts/script.js" defer></script>
-    <script src="./scripts/category_sort.js" defer></script>
+    
 </body>
 </html>
